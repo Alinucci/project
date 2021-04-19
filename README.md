@@ -5,6 +5,9 @@ In this project, I continued the project that was done in the front end course. 
 <p align="center"><img src="https://user-images.githubusercontent.com/78734741/115195080-252a2600-a110-11eb-97a3-ca69bfa9fd1b.png" width="900"></p>
 <p align="center"><img src="https://user-images.githubusercontent.com/78734741/115195091-278c8000-a110-11eb-9582-87ff8f0bbb34.png" width="900"></p>
 
+## ERD Diagram
+<p align="center"><img src="https://user-images.githubusercontent.com/78734741/115205394-54926000-a11b-11eb-9370-87e7ccb0f63a.png" width="900"></p>
+
 ## Multi Language 
 There are two languages Russian and English
 <p align="center"><img src="https://user-images.githubusercontent.com/78734741/115197035-658aa380-a112-11eb-8e14-4d1f104b2a4c.png" width="900"></p>
@@ -38,4 +41,6 @@ This is a Java course. In this course, the sections. Each section has lessons.
 <p align="center"><img src="https://user-images.githubusercontent.com/78734741/115195912-2445c400-a111-11eb-87a7-195eb1c4f9c4.png" width="900"></p>
 <p align="center"><img src="https://user-images.githubusercontent.com/78734741/115196600-eb5a1f00-a111-11eb-91cf-63011b0ed5aa.png" width="900"></p>
 <p align="center"><img src="https://user-images.githubusercontent.com/78734741/115196699-07f65700-a112-11eb-8d7a-86c926e19742.png" width="900"></p>
+
+
 
