@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Office</title>
+        <link rel = "stylesheet" href = "/css/office.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=9d38e92c-72e7-45ad-8cac-bee207b4f332 key&lang=en_US" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            ymaps.ready(init);
+
+var myMap;
+
+function init () {
+ 
+    myMap = new ymaps.Map(
+
+        'map',
+  
+        {
+            center: [51.143969, 71.435801],
+            
+            zoom: 12,
+        }, {
+
+            searchControlProvider: 'yandex#search'
+        }
+    );
+    var myGeoObjectA = new ymaps.GeoObject({
+
+            geometry: {
+
+                type: "LineString",
+  
+                coordinates: [
+                    [55.80, 37.50],
+                    [55.70, 37.40]
+                ]
+            },
+
+            properties:{
+
+                hintContent: "Я геообъект",
+
+            }
+        }, {
+
+            draggable: false,
+
+            strokeColor: "#00008B",
+
+            strokeWidth: 4
+        });
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Office',
+            balloonContent: 'street Abai 45'
+        }, {
+            iconLayout: 'default#image',
+
+            iconImageHref: '/icon/location.ico',
+
+            iconImageSize: [50, 45],
+
+            iconImageOffset: [-5, -38]
+        }),
+        myPlacemarkWithContent = new ymaps.Placemark([43.237156, 76.945618], {
+            hintContent: 'Office',
+            balloonContent: 'street Shalapina 32',
+        }, {
+
+            iconLayout: 'default#imageWithContent',
+
+            iconImageHref: '/icon/location.ico',
+
+            iconImageSize: [48, 48],
+
+            iconImageOffset: [-24, -24],
+
+            iconContentOffset: [15, 35],
+
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarMoscow = new ymaps.Placemark([55.755814, 37.617635], {
+            hintContent: 'Office',
+            balloonContent: 'street Pushkina 44',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarLondon = new ymaps.Placemark([51.507351, -0.127660], {
+            hintContent: 'Office',
+            balloonContent: 'street Baker 7/2',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarNewYork = new ymaps.Placemark([40.714599, -74.002791], {
+            hintContent: 'Office',
+            balloonContent: 'street Linkol A125',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarPekin = new ymaps.Placemark([39.901843, 116.391433], {
+            hintContent: 'Office',
+            balloonContent: 'street Yamander 23/1',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarChicago = new ymaps.Placemark([41.875725, -87.623757], {
+            hintContent: 'Office',
+            balloonContent: 'street Bulls C21',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarTashkent = new ymaps.Placemark([41.311151, 69.279737], {
+            hintContent: 'Office',
+            balloonContent: 'street Axmet Yasayi 12',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarHouston = new ymaps.Placemark([29.763693, -95.363183], {
+            hintContent: 'Office',
+            balloonContent: 'street 125 A21',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarParis = new ymaps.Placemark([48.856663, 2.351556], {
+            hintContent: 'Office',
+            balloonContent: 'street Queen 2 333',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarMadrid = new ymaps.Placemark([40.419348, -3.700897], {
+            hintContent: 'Office',
+            balloonContent: 'street Capatoki 3',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarRome = new ymaps.Placemark([41.902689, 12.496176], {
+            hintContent: 'Office',
+            balloonContent: 'street Makedon 54',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarStambul = new ymaps.Placemark([41.011218, 28.978169], {
+            hintContent: 'Office',
+            balloonContent: 'street Suleiman 12',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarMexico = new ymaps.Placemark([19.432605, -99.133296], {
+            hintContent: 'Office',
+            balloonContent: 'street Kaptal 8',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        myPlacemarBrazil = new ymaps.Placemark([-15.802118, -47.889062], {
+            hintContent: 'Office',
+            balloonContent: 'street TA B211',
+        }, {
+            
+            iconLayout: 'default#imageWithContent',
+        
+            iconImageHref: '/icon/location.ico',
+           
+            iconImageSize: [48, 48],
+      
+            iconImageOffset: [-24, -24],
+            
+            iconContentOffset: [15, 35],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+        
+        myMap.geoObjects
+        .add(myPlacemark)
+        .add(myPlacemarkWithContent)
+        .add(myPlacemarMoscow)
+        .add(myPlacemarLondon)
+        .add(myPlacemarNewYork)
+        .add(myPlacemarPekin)
+        .add(myPlacemarChicago)
+        .add(myPlacemarTashkent)
+        .add(myPlacemarHouston)
+        .add(myPlacemarParis)
+        .add(myPlacemarMadrid)
+        .add(myPlacemarRome)
+        .add(myPlacemarStambul)
+        .add(myPlacemarMexico)
+        .add(myPlacemarBrazil)
+        .add(myGeoObjectA)
+        .add(myPolyline);
+}
+function NurSultan() {
+    myMap.setCenter([51.143969, 71.435801]);
+}
+function Almaty() {
+    myMap.setCenter([43.237156, 76.945618]);
+}
+function Moscov() {
+    myMap.setCenter([55.755814, 37.617635]);
+}
+function London() {
+    myMap.setCenter([51.507351, -0.127660]);
+}
+function NewYork() {
+    myMap.setCenter([40.714599, -74.002791]);
+}
+function Pekin() {
+    myMap.setCenter([39.901843, 116.391433]);
+}
+function Chicago() {
+    myMap.setCenter([41.875725, -87.623757]);
+}
+function Tashkent() {
+    myMap.setCenter([41.311151, 69.279737]);
+}
+function Houston() {
+    myMap.setCenter([29.763693, -95.363183]);
+}
+function Paris() {
+    myMap.setCenter([48.856663, 2.351556]);
+}
+function Madrid() {
+    myMap.setCenter([40.419348, -3.700897]);
+}
+function Rome() {
+    myMap.setCenter([41.902689, 12.496176]);
+}
+function Stambul() {
+    myMap.setCenter([41.011218, 28.978169]);
+}
+function Mexico() {
+    myMap.setCenter([19.432605, -99.133296]);
+}
+function Brazil() {
+    myMap.setCenter([-15.802118, -47.889062]);
+}
+$( document ).ready(function () {
+$('#almaty_img').hide();
+$('#moscow_img').hide();
+$('#london_img').hide();
+$('#newyourk_img').hide();
+$('#pekin_img').hide();
+$('#chicago_img').hide();
+$('#tashkent_img').hide();
+$('#houston_img').hide();
+$('#paris_img').hide();
+$('#madrid_img').hide();
+$('#rome_img').hide();
+$('#stambul_img').hide();
+$('#mexico_img').hide();
+$('#brazil_img').hide();
+
+$('#nursultan_btn').click(function () {
+	$('#almaty_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#nursultan_img').toggle(50);
+});
+$('#moscow_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#almaty_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#moscow_img').toggle(0);
+});
+$('#london_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#almaty_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#london_img').toggle(0);
+});
+$('#newyourk_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#almaty_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#newyourk_img').toggle(0);
+});
+$('#pekin_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#almaty_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#pekin_img').toggle(0);
+});
+$('#almaty_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#almaty_img').toggle(0);
+});
+$('#chicago_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#almaty_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#chicago_img').toggle(0);
+});
+$('#tashkent_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#almaty_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#tashkent_img').toggle(0);
+});
+$('#houston_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#almaty_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#houston_img').toggle(0);
+});
+$('#paris_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#almaty_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#paris_img').toggle(0);
+});
+$('#madrid_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#almaty_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#madrid_img').toggle(0);
+});
+$('#rome_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#almaty_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#rome_img').toggle(0);
+});
+$('#stambul_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#almaty_img').hide();
+    $('#mexico_img').hide();
+    $('#brazil_img').hide();
+    $('#stambul_img').toggle(0);
+});
+$('#mexico_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#almaty_img').hide();
+    $('#brazil_img').hide();
+    $('#mexico_img').toggle(0);
+});
+$('#brazil_btn').click(function () {
+	$('#nursultan_img').hide();
+    $('#moscow_img').hide();
+    $('#london_img').hide();
+    $('#newyourk_img').hide();
+    $('#pekin_img').hide();
+    $('#chicago_img').hide();
+    $('#tashkent_img').hide();
+    $('#houston_img').hide();
+    $('#paris_img').hide();
+    $('#madrid_img').hide();
+    $('#rome_img').hide();
+    $('#stambul_img').hide();
+    $('#mexico_img').hide();
+    $('#almaty_img').hide();
+    $('#brazil_img').toggle(0);
+});
+})
+        </script>
+    </head>
+    <body>
+        <div class = "city">
+            <img id ="nursultan_img"src = "/image/nursultan.jpg" height="30%">
+            <img id = "almaty_img" src = "/image/almaty.jpg" height="30%">
+            <img id = "moscow_img" src="/image/moscow.jpg" height="30%">
+            <img id = "london_img" src="/image/london.jpg" height="30%">
+            <img id = "newyourk_img" src="/image/newyourk.jpg" height="30%">
+            <img id = "pekin_img" src="/image/pekin.jpg" height="30%">
+            <img id = "chicago_img" src="/image/chicago.jpg" height="30%">
+            <img id = "tashkent_img" src="/image/tashkent.jpg" height="30%">
+            <img id = "houston_img" src="/image/houston.jpg" height="30%">
+            <img id = "paris_img" src="/image/paris.jpg" height="30%">
+            <img id = "madrid_img" src="/image/madrid.jpg" height="30%">
+            <img id = "rome_img" src="/image/rome.jpg" height="30%">
+            <img id = "stambul_img" src="/image/stambul.jpg" height="30%">
+            <img id = "mexico_img" src="/image/mexico.jpg" height="30%">
+            <img id = "brazil_img" src="/image/brazil.jpg" height="30%">
+            <ul>
+                <a href="#" id = "nursultan_btn" onclick="NurSultan()"><li >Nur-Sultan(Astana)</li></a>
+                <a href = "#"id ="almaty_btn" onclick = "Almaty()"><li>Almaty</li></a>
+                <a href="#" id = "moscow_btn" onclick="Moscov()"><li>Moscow</li></a>
+                <a href="#" id = "london_btn" onclick="London()"><li>London</li></a>
+                <a href = "#" id = "newyourk_btn" onclick="NewYork()"><li>New York</li></a>
+                <a href = "#" id = "pekin_btn" onclick="Pekin()"><li>Pekin</li></a>
+                <a href="#" id = "chicago_btn" onclick="Chicago()"><li>Chicago</li></a>
+                <a href = "#" id = "tashkent_btn" onclick="Tashkent()"><li>Tashkent</li></a>
+                <a href = "#" id = "houston_btn" onclick="Houston()"><li>Houston</li></a>
+                <a href ="#" id = "paris_btn" onclick="Paris()"><li>Paris</li></a>
+                <a href ="#" id = "madrid_btn" onclick="Madrid()"><li>Madrid</li></a>
+                <a href ="#" id = "rome_btn" onclick="Rome()"><li>Rome</li></a>
+                <a href ="#" id = "stambul_btn" onclick="Stambul()"><li>Stambul</li></a>
+                <a href ="#" id = "mexico_btn" onclick="Mexico()"><li>Mexico</li></a>
+                <a href ="#" id = "brazil_btn" onclick="Brazil()"><li>Brazil</li></a>
+            </ul>
+        </div>
+        <div id = "map"></div>
+
+    </body>
+</html>

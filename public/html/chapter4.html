@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 4</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "/css/chapter4.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <hr>
+        <div class = "head_content">
+            <img id = "amigo" src = "/image_java/risha.png" height="90px">
+            <p id = "head_p"><strong><bdi>Ready for the first program</bdi></strong></p>
+        </div>
+        <br><br><br>
+        <div class = "content_preface">
+            <p>- Well. So where did we stop?</p>
+            <p id = "amigo_p">- Method code or something like that.</p>
+            <p>- Yeah. Exactly.<mark style = "color:red; background-color:white"> The body of a method consists of commands.</mark> You could even say that a method is a group of commands that have been given a name (method name). And so and so will be true.</p>
+            <p>- There are different teams. Do you have dogs on the planet?</p>
+            <p id ="amigo_p">- Only domesticated robotic wolves</p>
+            <p>- Do they execute commands?</p>
+            <p id ="amigo_p">- Yeah. "Bite", "Eat", "Bite" and "Well done! Nearby!"</p>
+        </div>
+        <br><br><br>
+        <div class = "head_img">
+            <img id = "start" src = "/image_java/810.png" height="450px">
+        </div>
+        <br><br>
+        <div class = "content_preface">
+            <p>- Hm. Wow teams. And the teams themselves are sparse.</p>
+            <p id ="amigo_p">-How much do you need?</p>
+            <p>- The Java language has commands for all occasions. Each command describes a specific action. Each command ends with a semicolon.</p>
+            <p>- Command examples:</p>
+        </div>
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description (what it does)</th>
+            </tr>
+            <tr>
+                <td>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">println</mark>(<mark style = "color:green; background-color:white">1</mark>);</td>
+                <td>Displays a number <mark style = "color:green; background-color:white"><kbd> 1</kbd></mark></td>
+            </tr>
+            <tr>
+                <td>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">println</mark>(<mark style = "color:green; background-color:white">"Amigo"</mark>);</td>
+                <td>Displays an inscription on the screen <mark style = "color:green; background-color:white"><kbd>Amigo</kbd></td>
+            </tr>
+            <tr>
+                <td>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">println</mark>(<mark style ="color:green; background-color:white">"Risha & Amigo"</mark>);</td>
+                <td>Displays an inscription on the screen<mark style = "color:green; background-color:white"> <kbd>Risha & Amigo</kbd></mark></td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p>- It's actually one command -<kbd> System.out.println.</kbd> <mark style = "color:blueviolet;background-color:white">Parameters are passed to it in parentheses. Depending on the parameter values, one command can do different things.</mark></p>
+            <p id ="amigo_p">- It is very comfortable.</p>
+            <p>- Yeah.<mark style = "color:green;background-color:white"> If you want to display text on the screen, it must be marked on both sides with double quotes (").</mark></p>
+            <p>- A single quotation mark looks like this (’), and a double quotation mark looks like this ("). A double quotation mark is not two single ones, please do not confuse.</p>
+            <p id ="amigo_p">- Double is the one next to the Enter button?</p>
+            <p>-Yes.</p>
+            <p>Amigo's pulse went from 3 to 5 GHz, but he still couldn't believe it. He just learned how to display strings on the screen, and it turned out to be much easier than he thought.<br>Amigo looked out the window to distract himself from his thoughts and calm down. Leaves are turning yellow - Rusty Season is coming soon, he noted mechanically. The porthole allowed you to see much farther than usual - alien technology was at its best. Does he care about the leaves now? After all, by the evening he will learn several times more.</p>
+        </div>
+        <div class = "head_img">
+            <img id = "start" src = "/image_java/811.png" height="450px">
+        </div>
+        <div class = "content_preface">
+            <p>But thoughts did not obey. Someday he will write a program so that all robots will hide in their homes with the onset of the Rusty Season. And this program will save thousands of robotic lives ...</p>
+            <p>- There are two variations of this command: <kbd>System.out.print<mark style = "color:red;background-color:white">ln</mark>()</kbd> and <kbd>System.out.print()</kbd></p>
+            <p>- If you write the <kbd>System.out.println()</kbd> command several times, then each time the text passed to it will be displayed on a new line. If <kbd>System.out.print()</kbd>, then the text will be printed on the same line. Example:</p>
+        </div>
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>What will be displayed</th>
+            </tr>
+            <tr>
+                <td>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">println</mark>(<mark style = "color:green; background-color:white">"Amigo"</mark>);<br>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">println</mark>(<mark style = "color:green; background-color:white">"The"</mark>);<br>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">println</mark>(<mark style = "color:green; background-color:white">"Best"</mark>);</td>
+                <td>Amigo <br>The<br>Best</td>
+            </tr>
+            <tr>
+                <td>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">print</mark>(<mark style = "color:green; background-color:white">"Amigo"</mark>);<br>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">println</mark>(<mark style = "color:green; background-color:white">"The"</mark>);<br>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">print</mark>(<mark style = "color:green; background-color:white">"Best"</mark>);</td>
+                <td>AmigoThe <br>Best</td>
+            </tr>
+            <tr>
+                <td>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">print</mark>(<mark style = "color:green; background-color:white">"Amigo"</mark>);<br>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">print</mark>(<mark style = "color:green; background-color:white">"The"</mark>);<br>System.out.<mark style = "color:rgb(255, 136, 0);background-color:white">print</mark>(<mark style = "color:green; background-color:white">"Best"</mark>);</td>
+                <td>AmigoTheBest</td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p>- A small remark. The <kbd>print<mark style ="color:red;background-color:white">ln</kbd> command does not print text on a new line — it prints text on the current line, but makes the next text appear on a new line.</p>
+            <p>- The <kbd>println()</kbd> command displays text and then adds a special invisible "line feed" character, so that the next text will be displayed at the beginning of a new line.</p>
+            <p id = "amigo_p">- What will a fully written program look like?</p>
+            <p>- Attention to the screen:</p>
+        </div>
+        <div class = "code">
+            <div id ="block2">
+                <code style = "font-size: 20px;">
+                    &nbsp;<mark style = "color:blue;background-color:white;">public class</mark> Home<br>
+                    &nbsp;{<br>                       
+                            &nbsp;&nbsp;&nbsp;&nbsp;<mark style = "color:blue;background-color:white;">public static void</mark> <mark style = "color:rgb(255, 60, 0);background-color:white;">main</mark>(String[] args)<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.<mark style = "color:rgb(255, 60, 0);background-color:white;">print</mark>(<mark style = "color:green; background-color:white">"Amigo"</mark>);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.<mark style = "color:rgb(255, 60, 0);background-color:white;">print</mark>(<mark style = "color:green; background-color:white">"The"</mark>);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.<mark style = "color:rgb(255, 60, 0);background-color:white;">print</mark>(<mark style = "color:green; background-color:white">"Best"</mark>);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;    }
+                </code>
+            </div>
+        </div>
+        <div class = "content_preface">
+            <p id ="amigo_p">- ABOUT! All clear. We add spaces at the end of words to keep the words from sticking together, right?</p>
+            <p>- Exactly. You're a smart guy.<br>
+                Amigo all lit up from such a comment.</p>
+                <p>- Fine, then here's your first assignment.</p>
+        </div>
+        <div id = "assignment">
+            <div class = "content_preface">
+                <p>Write a program that displays the caption on the screen:</p>
+                <p><kbd>I think being a programmer is cool</kbd></p>
+                <p>Requirements:</p>
+                <ul>
+                    <li>The program should output text.</li>
+                    <li>The text should start with "I think".</li>
+                    <li>The text must end with "this is cool".</li>
+                    <li>The text must be 39 characters long, including spaces and punctuation marks.</li>
+                    <li>The text must be one line.</li>
+                    <li>The displayed text should correspond to the task.</li>
+                </ul>
+            </div>
+        </div><br><br>
+        <div class = "btn">
+            <a href = "/html/chapter3.html"><button> <strong>< Previous lecture</strong></button></a>
+            <a href = "/html/chapter5.html"><button><strong>Next lecture ></strong></button></a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 5</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "/css/chapter5.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <hr>
+        <div class = "head_content">
+            <img id = "amigo" src = "/image_java/elly.png" height="90px">
+            <p id = "head_p"><strong><bdi>Ellie, variables and their types</bdi></strong></p>
+        </div>
+        <br><br><br>
+        <div class = "head_img">
+            <img id = "start" src = "/image_java/812.png" height="450px">
+        </div>
+        <br><br>
+        <div class = "content_preface">
+            <p>A chic woman with pink hair entered the cabin. "I wonder if all human women with hair like that?" - managed to think Amigo, but quickly embarrassed under her gaze.</p>
+            <p>- Hello! My name is Elleanor Kerry, you can just Ellie. I am the navigator of the Galactic Rush.</p>
+            <p id = "amigo_p">- Hi Ellie! Amigo squeezed out of himself in embarrassment. He didn’t know why, but he felt his cheeks burn, as if an oil line had been punctured somewhere inside.</p>
+            <p>- I'll tell you about the most interesting thing in Java - about variables.</p>
+            <p id = "amigo_p">- I'm ready to listen. What are these variables?</p>
+            <p>-<mark style = "color:green; background-color:white"> Variables are special things for storing data.</mark> Any data. All data in Java is stored using variables. Most of all, a variable in meaning resembles a box.</p>
+            <p id = "amigo_p">- Which box?</p>
+            <p>- Yes, the usual. Let's say that you wrote the number 13 on a piece of paper and put this sheet in a box, now we can say that “the box stores the value 13”.</p>
+            <p>- Every variable in Java has three important properties: type,<mark style = "color:green; background-color:white"> name</mark> and <mark style = "color: red; background-color:white">value</mark>.</p>
+            <p id = "amigo_p">- Can you give more details?</p>
+            <p>- Sure.<mark style = "color:green;background-color:white"> The name is used to distinguish one variable from another. It's like writing on a box.</mark></p>
+            <p>-<mark style = "color:brown;background-color:white"> The type of the variable determines the type of values / data that can be stored in it. We store the cake in the cake box, shoes in the shoe box, etc.</mark></p>
+            <p>-<mark style = "color: purple;background-color:white"> A value is an object, data or information that is stored in a variable.</mark></p>
+            <p id = "amigo_p">- Can you talk about the type again?</p>
+            <p>- OK. Every object in the Java language has its own type. For example, there may be such data types: "integer", "fractional number", "text", "type Cat", "type House", etc.</p>
+            <p><mark style = "color: red; background-color:white">- The variable also has its own type. A variable can only store values of the same type as itself.</mark></p>
+            <p>- In real life, this is often the case. Different boxes are used to store different things:</p>
+        </div>
+        <br><br><br>
+        <div class = "head_img">
+            <img id = "start" src = "/image_java/813.png" height="400px">
+        </div>
+        <br><br>
+        <div class = "content_preface">
+            <p>- To create a variable, use a command of the form: "<kbd>type name</kbd>".</p>
+        </div>
+        <table>
+            <tr>
+                <th>Creating a variable:
+                    type first, then name.</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><kbd style = "color:white; background-color:red">int a</kbd>;</td>
+                <td>Create a variable named <kbd style = "color:white; background-color:red">a</kbd> of type <kbd style = "color:white; background-color:red">int</kbd>.</td>
+            </tr>
+            <tr>
+                <td><kbd style = "color:white; background-color:green">String s</kbd></td>
+                <td>Create a variable named <kbd style = "color:white; background-color:green">s</kbd> of type <kbd style = "color:white; background-color:green">String</kbd>.</td>
+            </tr>
+            <tr>
+                <td><kbd style = "color:white; background-color:purple">double d</kbd</td>
+                <td>Create a variable named <kbd style = "color:white; background-color:purple">d</kbd> of type <kbd style = "color:white; background-color:purple">double</kbd>.</td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p>- The two most commonly used types are integers (denoted by <kbd style = "color:white; background-color:red">int</kbd>) and text (denoted by<kbd style = "color:white; background-color:green">String</kbd>).</p>
+            <p id = "amigo_p">- And the double type?</p>
+            <p>- double are fractional (real) numbers.</p>
+            <p id = "amigo_p">- You said that a variable has three properties: type, name and value. And then there are only two. I have a question - how to enter a value into a variable?</p>
+            <p>- If you go back to the analogy with boxes, then imagine that you took a leaf, wrote the number 42 on it and put it in a box. The box now stores the value 42.</p>
+            <p id = "amigo_p">- I see.</p>
+            <p>- To enter a value into a variable, there is a special operation - an <strong>assignment operation.</strong> It <mark style = "color:green; background-color:white">copies the value from one variable to another</mark>. Does not transfer, namely copies. As a file on disk. It looks like this:</p>
+        </div>
+        <table>
+            <tr>
+                <th>The Code</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><kbd style = "color:white; background-color:green">i</kbd> = 3;</td>
+                <td>The variable <kbd style = "color:white; background-color:green">i</kbd> is set to the value 3.</td>
+            </tr>
+            <tr>
+                <td><kbd style = "color:white; background-color:green">a</kbd> = 1;<br><kbd style = "color:white; background-color:purple">b</kbd> = <kbd style = "color:white; background-color:green">a</kbd> + 1;</td>
+                <td>The variable <kbd style = "color:white; background-color:green">a</kbd> is set to the value 1 <br>The variable <kbd style = "color:white; background-color:purple">b</kbd> is set to the value 2</td>
+            </tr>
+            <tr>
+                <td><kbd style = "color:white; background-color:rgb(255, 145, 2)">x</kbd> = 3;<br><kbd style = "color:white; background-color:rgb(255, 145, 2)">b</kbd> = <kbd style = "color:white; background-color:rgb(255, 145, 2)">a</kbd> + 1;</td>
+                <td>The variable <kbd style = "color:white; background-color:rgb(255, 145, 2)">x</kbd> is set to the value 3 <br>In the next line, x is increased by 1, <kbd style = "color:white; background-color:rgb(255, 145, 2)">x</kbd> is now 4</td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p>- For the assignment operation, <strong>the symbol is "="</strong>.</p>
+            <p>- Again.<strong> This is not a comparison.</strong> This is<mark style = "color:red;background-color:white"> exactly copying the value to the right of the equal</mark> sign into the variable that is to the left. For comparison, the Java language uses double equals "==".</p>
+            <p id = "amigo_p">- And I know how to put a cat in a variable. It's almost like a program.</p>
+            <p id = "amigo_p">- How to catch a cat:</p>
+            <p id ="amigo_p">1 Take an empty box.</p>
+            <p id = "amigo_p">2 Wait.</p>
+        </div>
+        <br>
+        <div class = "head_img">
+            <img id = "start" src = "/image_java/814.png" height="450px">
+        </div>
+        <br>
+        <div class = "content_preface">
+            <p>- No, Amigo, you can only stuff one cat in a box. Ugh! <mark style = "color:green;background-color:white">Only one value can be put into a variable.</mark></p>
+            <p id = "amigo_p">— Ясно. А можно еще примеров, как создать переменные?</p>
+            <p>- OK, again. To create a variable, you need to write the following command "<kbd>type name</kbd>"</p>
+        </div>
+        <table>
+            <tr>
+                <th>The Code</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>String <kbd style = "color:white; background-color:red">s</kbd>;</td>
+                <td>A variable <kbd style = "color:white; background-color:red">s</kbd> of type <kbd>String</kbd> is created.<br>Such a variable can store texts.</td>
+            </tr>
+            <tr>
+                <td>int <kbd style = "color:white; background-color:rgb(255, 145, 2)">x</kbd>;</td>
+                <td>A variable <kbd style = "color:white; background-color:red">x</kbd> of type <kbd>int</kbd> is created.<br>Such a variable can store integers.</td>
+            </tr>
+            <tr>
+                <td>int <kbd style = "color:white; background-color:purple">a</kbd>,<kbd style = "color:white; background-color:blue">b</kbd>,<kbd style = "color:white; background-color:green">c</kbd>;<br><kbd style = "color:white; background-color:rgb(255, 145, 2)">d</kbd>;</td>
+                <td>A variable <kbd style = "color:white; background-color:purple">a</kbd>,<kbd style = "color:white; background-color:blue">b</kbd>,<kbd style = "color:white; background-color:green">c</kbd>,<kbd style = "color:white; background-color:rgb(255, 145, 2)">d</kbd> of type <kbd>int</kbd> is created.<br>Such variables can store integers</td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p id = "amigo_p">- Oh, now everything is clear.</p>
+            <p>- Please note that you cannot create two variables with the same name in the same method.</p>
+            <p id = "amigo_p">- And in different methods?</p>
+            <p>- In different methods - you can. It's like boxes in different houses.</p>
+            <p id = "amigo_p">- Can a variable name be anything?</p>
+            <p>- Almost, but <mark style = "color:red; background-color:white"> it cannot contain spaces, +, -, etc.</mark> It is best to use <mark style = "color:green; background-color:white">only Latin characters and numbers in the variable name.</mark></p>
+            <p>- Please note that<strong> in the Java language it plays a role, which letters you write - large or small.</strong> <mark style = "color:brown; background-color:white">"int a" is not the same as "int a".</mark></p>
+            <p id = "amigo_p">- By the way, in Java you can simultaneously create a variable and assign a value to it. This saves time and space:</p>
+        </div>
+        <table>
+            <tr>
+                <th>Compact code</th>
+                <th>Long code equivalent to the code on the left</th>
+            </tr>
+            <tr>
+                <td><kbd style = "color:green; background-color:white;border-style:none">int a = 5;</kbd><br><kbd style = "color:blue; background-color:white;border-style:none">int b = 6;</kbd></td>
+                <td><kbd style = "color:green; background-color:white;border-style:none">int a;<br>a = 5;</kbd><br><kbd style = "color:blue; background-color:white;border-style:none">int b;<br>b = 6;</kbd></td>
+            </tr>
+            <tr>
+                <td><kbd style = "color:red; background-color:white; border-style:none">int c = 7;</kbd><br><kbd style = "color:purple; background-color:white;border-style:none">int d = c + 1;</kbd></td>
+                <td><kbd style = "color:red; background-color:white; border-style:none">int c;<br>c = 7;</kbd><br><kbd style = "color:purple; background-color:white;border-style:none">int d; <br>d = c + 1; </kbd></td>
+            </tr>
+            <tr>
+                <td><kbd style = "color:blue; background-color:white; border-style:none">String s = "I’m Amigo";</kbd></td>
+                <td><kbd style = "color:blue; background-color:white; border-style:none">String s;<br> s = "I’m Amigo";</kbd></td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p id = "amigo_p">- It's much more compact and clear.</p>
+            <p>- On that and stand.</p>
+            <p>- There are two types that a beginner in the Java language should definitely get acquainted with. These are <mark style = "color:red; background-color:white">int (integers)</mark> and <mark style = "color:rgb(255, 123, 0); background-color:white">String (text / strings) </mark></p>
+            <p>- The int type allows storing numbers in a variable, as well as performing various operations on them: addition, subtraction, multiplication, division, and others.</p>
+        </div>
+        <table>
+            <tr>
+                <th>The code</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><kbd style = "color:blue; background-color:white;border-style:none">int </kbd><kbd style = "color:white; background-color:rgb(255, 145, 0)">x</kbd> = <kbd style = "color:blue; background-color:white;border-style:none">1;</kbd><br><kbd style = "color:blue; background-color:white;border-style:none">int </kbd><kbd style = "color:white; background-color:blue">y</kbd> = <kbd style = "color:white; background-color:rgb(255, 145, 0)">x</kbd> * <kbd style = "color:blue; background-color:white;border-style:none">1;</kbd><br><kbd style = "color:blue; background-color:white;border-style:none">int </kbd><kbd style = "color:white; background-color:green">z</kbd> = <kbd style = "color:blue; background-color:white;border-style:none">5</kbd> * <kbd style = "color:white; background-color:blue">y</kbd> * <kbd style = "color:white; background-color:blue">y</kbd> + <kbd style = "color:blue; background-color:white;border-style:none">2</kbd> * <kbd style = "color:white; background-color:blue">y</kbd> + <kbd style = "color:blue; background-color:white;border-style:none">3</kbd></td>
+                <td><kbd style = "color:white; background-color:rgb(255, 145, 0)">x</kbd> will be equal to 1.<br><kbd style = "color:white; background-color:blue">y</kbd> will be equal to 2.<br><kbd style = "color:white; background-color:green">z</kbd> will be equal to 20 + 4 + 3, will be equal to 27</td>
+            </tr>
+            <tr>
+                <td><kbd style = "color:blue; background-color:white;border-style:none">int </kbd> <kbd style = "color:white; background-color:blue">a</kbd> = <kbd style = "color:blue; background-color:white;border-style:none">5;</kbd><br><kbd style = "color:blue; background-color:white;border-style:none">int </kbd> <kbd style = "color:white; background-color:green">b</kbd> = <kbd style = "color:blue; background-color:white;border-style:none">1;</kbd><br><kbd style = "color:blue; background-color:white;border-style:none">int </kbd> <kbd style = "color:white; background-color:purple">c</kbd> = (<kbd style = "color:white; background-color:blue">a</kbd> - <kbd style = "color:white; background-color:green">b</kbd>) * (<kbd style = "color:white; background-color:blue">a</kbd> + <kbd style = "color:white; background-color:green">b</kbd>) </td>
+                <td><kbd style = "color:white; background-color:blue">a</kbd> will be equal to 5.<br><kbd style = "color:white; background-color:green">b</kbd> will be equal to 1.<br><kbd style = "color:white; background-color:purple">c</kbd> will be equal to 4 * 6, will be equal to 24</td>
+            </tr>
+            <tr>
+                <td><kbd style = "color:blue; background-color:white;border-style:none">int </kbd><kbd style = "color:white; background-color:blue">a</kbd> = <kbd style = "color:blue; background-color:white;border-style:none">64;</kbd><br><kbd style = "color:blue; background-color:white;border-style:none">int </kbd><kbd style = "color:white; background-color:red">b</kbd> = <kbd style = "color:white; background-color:blue">a</kbd> / <kbd style = "color:blue; background-color:white;border-style:none">8;</kbd><br><kbd style = "color:blue; background-color:white;border-style:none">int </kbd><kbd style = "color:white; background-color:purple">c</kbd> = <kbd style = "color:white; background-color:red">b</kbd> / <kbd style = "color:blue; background-color:white;border-style:none">4;</kbd><br><kbd style = "color:blue; background-color:white;border-style:none">int </kbd><kbd style = "color:white; background-color:rgb(245, 140, 3)">d</kbd> = <kbd style = "color:white; background-color:purple">c</kbd> * <kbd style = "color:blue; background-color:white;border-style:none">3;</kbd></td>
+                <td><kbd style = "color:white; background-color:blue">a</kbd> will be equal to 64.<br><kbd style = "color:white; background-color:red">b</kbd> will be equal to 8.<br><kbd style = "color:white; background-color:purple">c</kbd> will be equal to 2.<br><kbd style = "color:white; background-color:rgb(245, 140, 3)">a</kbd> will be equal to 6.</td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p id = "amigo_p">- And I understand everything. Is all programming so easy?</p>
+            <p>- Actually, yes.</p>
+            <p id = "amigo_p">- It's good. So what's next for you?</p>
+            <p>- The <b>String</b> type allows storing text strings.</p>
+            <p>- To specify a text string, in Java you need to write the text of the string, and write double quotes on both sides. Example:</p>
+        </div>
+        <table>
+            <tr>
+                <th>The Code</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>String <kbd style = "color:blue; background-color:white">s</kbd> = <mark style = "color: green;background-color:white">"Amigo"</mark>;</td>
+                <td><kbd>s</kbd> will contain the text <kbd style = "color:green;">"Amigo"</kbd>.</td>
+            </tr>
+            <tr>
+                <td>String <kbd style = "color:blue; background-color:white">s</kbd> = <mark style = "color: green;background-color:white">"123"</mark>>;</td>
+                <td><kbd>s</kbd> will contain the text <kbd style = "color:green;">"123"</kbd>.</td>
+            </tr>
+            <tr>
+                <td>String <kbd style = "color:blue; background-color:white">s</kbd> = <mark style = "color: green;background-color:white">"123 + 456"</mark>;</td>
+                <td><kbd>s</kbd> will contain the text <kbd style = "color:green;">"123 + 456"</kbd></td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p id = "amigo_p">- I understood. It doesn't look complicated.</p>
+            <p>- Then here's another interesting fact for you.</p>
+            <p>- Lines can be glued using the plus sign - "+". Example:</p>
+        </div>
+        <table>
+            <tr>
+                <th>The Code</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>String <kbd style = "color:blue; background-color:white">s</kbd> = <mark style = "color: green;background-color:white">"Amigo"</mark> + <mark style = "color: green;background-color:white">" is the best."</mark></td>
+                <td><kbd>s</kbd> will contain the text <kbd style = "color:green;">"Amigo is the best"</kbd>.</td>
+            </tr>
+            <tr>
+                <td>String <kbd style = "color:blue; background-color:white">s</kbd> = <mark style = "color: green;background-color:white">""</mark>;</td>
+                <td><kbd>s</kbd> will contain an empty string - a string with no characters at all.</td>
+            </tr>
+            <tr>
+                <td>int <kbd style = "color:purple; background-color:white">x</kbd> = <mark style = "color: blue;background-color:white">333</mark>;<br>String <kbd style = "color:blue; background-color:white">s</kbd> = <mark style = "color: green;background-color:white">"Amigo" + </mark> <kbd style = "color:purple; background-color:white">x</kbd>;</td>
+                <td><kbd>s</kbd> will contain the text <kbd style = "color:green;">"333Amigo"</kbd></td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p id = "amigo_p">- So you can also add strings and numbers?</p>
+            <p>- Yes,<mark style = "color:brown; background-color:white"> but keep in mind that adding strings and numbers always results in a string.</mark></p>
+            <p id = "amigo_p">- Yes, I already guessed by example.</p>
+            <p>- Well, since you are so quick-witted here, guess how to display a variable on the screen?</p>
+            <p id = "amigo_p">- Uh-uh. A variable? on the screen? Something nothing comes to mind.</p>
+            <p>- It's actually simple. To print something to the screen, we use the <mark style = "color:red; background-color:white">System.out.println()</mark> command, where we pass what we print as a parameter.</p>
+        </div>
+        <table>
+            <tr>
+                <th>The Code</th>
+                <th>Output on display</th>
+            </tr>
+            <tr>
+                <td>System.out.<mark style = "color:brown; background-color:white">println</mark>(<mark style = "color: green;background-color:white">"Amigo"</mark>);</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>System.out.<mark style = "color:brown; background-color:white">println</mark>(<mark style = "color: green;background-color:white">"Amigo"</mark> + <mark style = "color: green;background-color:white">"go"</mark>);;</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>String <mark style ="color: red; background-color:white">s</mark> = <mark style = "color: green;background-color:white">"Amigo"</mark>;<br>System.out.<mark style = "color:brown; background-color:white">println</mark>(<mark style = "color: red;background-color:white">"s"</mark>);</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>String <mark style ="color: red; background-color:white">s</mark> = <mark style = "color: green;background-color:white">"Am"</mark>;<br>System.out.<mark style = "color:brown; background-color:white">println</mark>(<mark style = "color: red;background-color:white">"s"</mark>) + <mark style = "color: green;background-color:white">"igo"</mark>;</td>
+                <td>Amigo</td>
+            </tr>
+        </table>
+        <div class = "content_preface">
+            <p id = "amigo_p">- Aha! Now everything has become much clearer.</p>
+            <p>- That is great. Then you have three more tasks.</p>
+        </div>
+        <div id = "assignment">
+            <div class = "content_preface">
+                <p>1.Write a program that displays "Ellie is the most beautiful" on the screen 5 times. Each time - on a new line.</p>
+                <p><kbd>Ellie is the most beautiful<br>Ellie is the most beautiful<br>Ellie is the most beautiful<br>Ellie is the most beautiful<br>Ellie is the most beautiful</kbd></p>
+                <p>Requirements:</p>
+                <ul>
+                    <li>The program should output text.</li>
+                    <li>The text must start with "Ellie".</li>
+                    <li>The text must end in "beautiful".</li>
+                    <li>The text should be 5 lines long.</li>
+                    <li>The text must be one line.</li>
+                    <li>The entered text must match the assignment.</li>
+                </ul>
+            </div>
+            <div id = "assignment">
+                <div class = "content_preface">
+                    <p>2.It is now 3126. My friend was born 8 years ago.</p>
+                    <p>Write a program that displays my friend's year of birth.</p>
+                    <p>Requirements:</p>
+                    <ul>
+                        <li>The program must use screen output.</li>
+                        <li>The displayed year must be 4 digits long..</li>
+                        <li>The displayed year must start with "31".</li>
+                        <li>The displayed year must correspond to the task.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "assignment">
+                <div class = "content_preface">
+                    <p>3.Write a program that declares the following variables in the <kbd style = "color: white; background-color:rgb(255, 136, 0)">main</kbd> method:</p>
+                    <p><kbd style = "color: white; background-color:blue">name</kbd> is of type <mark style ="color:rgb(255, 136, 0); background-color:rgb(210, 214, 152)">String</mark>, <kbd style = "color: white; background-color:blue">age</kbd> is of type <mark style ="color:rgb(255, 136, 0); background-color:rgb(210, 214, 152)">int</mark>, and <kbd style = "color: white; background-color:blue">city</kbd> is of type <mark style ="color:rgb(255, 136, 0); background-color:rgb(210, 214, 152)">String</mark>.</p>
+                    <p>Requirements:</p>
+                    <ul>
+                        <li>Declare a variable name of type String.</li>
+                        <li>Declare a variable age of type int.</li>
+                        <li>Declare a variable city of type String.</li>
+                        <li>3 variables must be declared.</li>
+                    </ul>
+                </div>
+            </div>
+        </div><br><br>
+        <div class = "btn">
+            <a href = "/html/chapter4.html"><button> <strong>< Previous lecture</strong></button></a>
+            <a href = "/html/chapter6.html"><button><strong>Next lecture ></strong></button></a>
+        </div>
+    </body>
+</html>

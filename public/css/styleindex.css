@@ -1,0 +1,401 @@
+body {
+  margin: 0;
+}
+.menuBar {
+  border-style: outset;
+}
+* {
+  box-sizing: border-box;
+}
+#menu_position {
+  max-height: 50px;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#menuButton_1,
+#menuButton_2,
+#menuButton_3 {
+  font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+  font-weight: bold;
+  font-size: 15px;
+  color: #00008B;
+  border-style: none;
+  background-color: white;
+  margin-left: 7px;
+}
+#menu3 {
+  text-decoration: none;
+}
+#menuButton_1:hover {
+  background-color: #00008B;
+  color: white;
+}
+#menuButton_2:hover {
+  background-color: #00008B;
+  color: white;
+}
+#menuButton_3:hover {
+  background-color: #00008B;
+  color: white;
+}
+@media screen and (min-width: 1200px) {
+  #menuButton {
+    font-size: 14px;
+  }
+}
+#login {
+  border-radius: 12px;
+  background-color: white;
+  color: #00008B;
+  border-color: #00008B;
+  height: 100%;
+}
+@media screen and (max-width: 500px) {
+  #menu_position {
+    margin: auto;
+  }
+  #menuButton_1,
+  #menuButton_2,
+  #menuButton_3 {
+    font-size: 0;
+  }
+  #menuButton_1:hover {
+    background-color: white;
+  }
+  #menuButton_2:hover {
+    background-color: white;
+  }
+  #logoedX {
+    margin-right: 50%;
+    margin-left: 50%;
+  }
+  #login {
+    height: 90%;
+    font-size: 3px;
+  }
+}
+.menu_image {
+  background-color: #F4F7FFFF;
+  height: 170px;
+}
+#first_glance {
+  background-color: #F4F7FFFF;
+  width: 850px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#text_inf {
+  color: #00008B;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+#girl_image {
+  -webkit-mask: linear-gradient(to left, #000000 70%, rgba(0, 0, 0, 0) 98%);
+}
+@media screen and (max-width: 500px) {
+  #text_inf {
+    font-size: 10px ;
+  }
+  .menu_image,
+  #first_glance {
+    height: 70px;
+    width: auto;
+  }
+}
+.search_input {
+  background-color: #F8F9FAFF;
+}
+#search_line {
+  margin: auto;
+  width: 850px;
+  background-color: #F8F9FAFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#search_text {
+  color: #36A3F0FF;
+  font-size: 15px;
+}
+#search {
+  width: 550px;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  top: -20px;
+  padding-left: 30px;
+}
+#search_icon {
+  z-index: 10;
+  margin-left: 12px;
+  position: relative;
+  top: 2px;
+}
+@media screen and (max-width: 500px) {
+  .search_input,
+  #search_line {
+    width: auto;
+  }
+  #search_text {
+    font-size: 7px;
+  }
+  #search_icon {
+    height: 7px;
+    width: 7px;
+  }
+  #search {
+    width: 225px;
+    height: 15px;
+    font-size: 7px;
+    margin-top: 11px;
+    padding-left: 20px;
+  }
+}
+.university {
+  margin: auto;
+  width: 850px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .university {
+    width: auto;
+  }
+  #boston {
+    width: 20px;
+    height: 8.75px;
+  }
+  #harward {
+    width: 35px;
+    height: 20px;
+  }
+  #hongHong {
+    width: 30px;
+    height: 30.25px;
+  }
+  #sdu {
+    width: 25.25px;
+    height: 25.25px;
+  }
+  #massachusetts {
+    width: 22.5px;
+    height: 17.5px;
+  }
+  #berkeley {
+    width: 30px;
+    height: 8.75px;
+  }
+}
+.TA {
+  width: 850px;
+  height: auto;
+  margin: auto;
+  background-color: #F8F9FAFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#TA_inf {
+  display: flex;
+  flex-direction: column;
+}
+#TA_text_inf {
+  font-size: 30px;
+  color: #002B2BFF;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+}
+#Ta_text_inf_2 {
+  margin-top: -18px;
+}
+#TA_button {
+  width: 90px;
+  border-radius: 9px;
+  color: white;
+  background-color: #002B2BFF;
+}
+#TA_img {
+  border-radius: 50px;
+  border-style: groove;
+  border-color: #002B2BFF;
+}
+@media screen and (max-width: 500px) {
+  .TA {
+    width: auto;
+  }
+  #TA_inf {
+    width: auto;
+  }
+  #TA_text_inf {
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+  }
+  #Ta_text_inf_2 {
+    font-size: 3px;
+  }
+  #TA_button {
+    width: 35px;
+    font-size: 4px;
+  }
+}
+.Subject {
+  width: 850px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#Subject_text {
+  font-size: 23px;
+  color: #002B2BFF;
+}
+#Subject_block_1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#Line_1 {
+  width: 275px;
+  height: 60px;
+  background-color: #002B2BFF;
+  border-top-left-radius: 10px ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#Line_1_text {
+  font-size: 18px;
+  color: white;
+  position: relative;
+  right: 20px;
+}
+#Line_2 {
+  width: 275px;
+  height: 200px;
+  background-color: #E1DDDBFF;
+  border-bottom-right-radius: 10px;
+}
+#course_text {
+  color: #002B2BFF;
+}
+li {
+  margin-bottom: 3px;
+}
+#Block {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+  .Subject {
+    width: auto;
+  }
+  #Subject_text {
+    font-size: 10px;
+  }
+  #Subject_block_1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #Line_1,
+  #Line_2 {
+    width: 70%;
+  }
+}
+.Contact_edX {
+  background-color: #FCFCFCFF;
+  height: 100px;
+  width: 100%;
+  border-style: groove;
+}
+#edX_inf {
+  width: 850px;
+  height: auto;
+  margin: auto;
+  background-color: #FCFCFCFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#edX_block {
+  width: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30;
+}
+#edx_block_text {
+  font-size: 20px;
+}
+#edx_block_text_2 {
+  color: #002B2BFF;
+}
+@media screen and (max-width: 500px) {
+  #edX_inf {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+  }
+  #edX_logo {
+    height: 15px;
+    width: 20px;
+    margin-left: 20%;
+  }
+}
+.course_inf {
+  margin: auto;
+  width: 700px;
+}
+#course_inf_text,
+#course_inf_text_2 {
+  background-color: white;
+  border-style: groove;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: absolute;
+  display: none;
+}
+#course_conteiner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#course_name {
+  color: #00008B;
+  margin-bottom: 4px;
+  font-size: 10px;
+}
+#course_conteiner_1 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.localization{
+    font: bold 11px Arial;
+    text-decoration: none;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 6</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "/css/chapter6.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            function myfunction(){
+                alert("To pass the next lectures you need to register.");
+            }
+        </script>
+    </head>
+    <body>
+        <hr>
+        <div class = "head_content">
+            <img id = "amigo" src = "/image_java/julio.png" height="90px">
+            <p id = "head_p"><strong><bdi>What is not taught in school</bdi></strong></p>
+        </div>
+        <br><br><br>
+        <div class = "head_img">
+            <img id = "start" src = "/image_java/815.png" height="450px">
+        </div>
+        <br><br>
+        <div class = "content_preface">
+            <p>- Hi Amigo. I am Julio Siesta.</p>
+            <p>-I see you've done a lot of work today.</p>
+            <p>- How about a well-deserved rest?</p>
+            <p id ="amigo_p">-Shouldn't we have a lecture?</p>
+            <p>- Yeah. But the lessons should be interesting, or have you forgotten? Nobody canceled the law on beating boring teachers with a stick!</p>
+            <p>- This is a special educational video material, designed to ... um ... to raise your interest in learning and ... In short, let's watch it already. And all the questions later. Turn it on!</p>
+            <p><strong>IT Relax | What they won't teach you at school</strong></p>
+            <p>In the secret training center JavaTA, in addition to standard lectures, there are also entertaining ones. However, they are also here for a reason, you will learn a lot from them about the area in which you have to work after graduation! It's time to relax a bit and watch a video about your future colleagues.</p>
+        </div>
+        <div class = "video">
+            <video width="900" height="740" controls>
+                <source src="/video/То, чему не научат Вас в школе.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class = "content_preface">
+            <p><strong>Now listen to the song to start learning programming again</strong></p>
+        </div>
+        <div class = "audio">
+            <audio controls>
+                <source src="/audio/Jack Stauber - Buttercup.mp3" type="audio/ogg">
+            </audio>
+        </div>
+        <br><br><br>
+        <div class = "btn">
+            <a href = "/html/chapter5.html"><button> <strong>< Previous lecture</strong></button></a>
+            <button onclick="myfunction()"><strong>Next lecture ></strong></button>
+        </div>
+    </body>
+</html>

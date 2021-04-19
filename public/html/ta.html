@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "/css/ta.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            function replace( hide, show, hide2) {
+                document.getElementById(hide).style.display="none";
+                document.getElementById(show).style.display="block";
+                document.getElementById(hide2).style.display="none";
+            }
+        </script>
+    </head>
+    <body>
+        <header class="v-header container">
+            <div class="fullscreen-video-wrap">
+              <video src="/video/200314 _Work Life_02_ 4k_058.mp4" autoplay muted loop>
+            </video>
+            </div>
+            <div class="header-overlay"></div>
+            <div class="header-content text-md-center">
+              <h1>Executive Education Course: Business<br> Analytics Fundamentals for Leaders</h1>
+              <p>Master the principles and practical applications of business analytics needed for<br> today's leaders</p>
+              <h1>Starts on January 22nd, 2021</h1>
+            </div>
+          </header>
+          <div class = "button">
+              <div id = "position">
+                  <button onclick="replace('body2','body', 'body3')" onmouseover="this.style.backgroundColor='#ffff';" onmouseout="this.style.backgroundColor='#808080FF'"><b>Overview</b></btutton>
+                  <button onclick="replace('body','body2', 'body3')" onmouseover="this.style.backgroundColor='#ffff';" onmouseout="this.style.backgroundColor='#808080FF'"><b>Curriculum</b></btutton>
+                  <button onclick="replace('body','body3', 'body2')" onmouseover="this.style.backgroundColor='#ffff';" onmouseout="this.style.backgroundColor='#808080FF'"><b>Instructors</b></btutton>
+              </div>
+          </div>
+          <div id = "body">
+              <div class = "body_1">
+                <h1 id = "body_h1">Course Overview:</h1>
+                <p id = "body_p">Data is critical to businesses, yet it is meaningless without analytics. Analyzing data has<br> now become a necessity for organizations to be successful, and decision makers more and<br> more have to recognize, interpret, and summarize key data. Understanding and articulating <br>analytics is key for leaders in almost every industry and across various levels.</p>
+                <p id = "body_p">This foundational business analytics course will provide you with the hands-on skills and<br> practical knowledge needed to be able to analyze, present findings, and make meaningful<br> conclusions about data in a business setting. Refresh your data analysis skills and master<br> how to effectively apply them, adding strategic value to your business.</p>
+                <h1 id = "body_h1">A Different Approach:</h1>
+                <ul>
+                    <li>A focus on applied learnings - You'll cover topics through the lens of real business cases</li>
+                    <li>LIVE Q&A sessions with the Instructor</li>
+                    <li>Discussion Boards to foster collaboration</li>
+                    <li>Flexible Schedule - Go through each week's content at your own pace</li>
+                    <li>Create plans on how to apply learnings to your current job and business</li>
+                </ul>
+                <h1 id = "body_h1">By the end of this course, you will be able to:</h1>
+                <ul>
+                    <li>Describe basic data types, sampling methods, surveys, and data visualization</li>
+                    <li>Use popular descriptive statistics and basic probability concepts</li>
+                    <li>Create inferential statistics tools such as confidence intervals and hypothesis testing</li>
+                    <li>Use basic Excel model building for revenue, cost, and profit</li>
+                    <li>Apply fundamental analytics to common business decisions</li>
+                </ul>
+                <h1 id = "body_h1">Examples of Real-World Applications:</h1>
+                <ul>
+                    <li>Identify sales tactics which produce the highest revenue</li>
+                    <li>Measure response to finite elements of a marketing campaign</li>
+                    <li>Optimize warehouse operations - picking, shipping and transportation</li>
+                    <li>Optimize profitability across a product line, including variance analysis</li>
+                    <li>Test validity for immediate feedback in Agile Development environments</li>
+                </ul>    
+                <h1 id = "body_h1">Meet The Instructor</h1>
+                <iframe width="1060" height="815" src="https://www.youtube.com/embed/kcXOKnVhGMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+            </div>
+            <div id = "body_cons" style="width: 100%; height: auto; background-color:grey">
+                <div id = "constant">
+                    <h1 id = "body_h1">Who's this Program For?</h1>
+                    <p id = "body_p">This is a foundational course in business analytics, designed to prepare those with strategic<br> decision-making responsibilities to effectively analyze, articulate, and apply key analytics <br>techniques in their work and use that knowledge to make decisions.</p>
+                    <p id = "body_p">It is also uniquely suited for those in analytics roles looking to move into leadership<br> positions where you need to use data-informed decision making.</p>
+                    <p id = "body_p">Ideal for:</p>
+                    <ul>
+                        <li>Data analysts in financial services, sales, marketing, operations, category management (including pricing optimization)</li>
+                        <li>Logistics functions across manufacturing, retail, transportation, healthcare, agriculture and tech</li>
+                        <li>Sales and Marketing managers who want to unlock more value from Salesforce, with immediate relevance for their teams</li>
+                        <li>Leaders looking to unlock value from the data in their ERP systems – SAP, Oracle, MS Dynamics 365</li>
+                        <li>Operations leaders well versed in TQM/Lean principles looking to grow their analytical skills to practically apply those techniques</li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+        
+        <div id = "body2">
+            <div class = "body_2"> 
+                <h1 id = "body_h1">Course Curriculum</h1>
+                <h1 id = "body_h1">Week 1: Exploring Data Analysis</h1>
+                <p id = "body_p">An introductory overview of the key concepts and techniques for analyzing data.</p>
+                <p id = "body_p"><b>NOTE:</b> Due to the Thanksgiving holiday, the workload will be lighter and some of these areas may be pushed to Week 2.</p>
+                <h1 id = "body_h1">Topics Covered:</h1>
+                <ul>
+                    <li><strong>Statistical Definitions & Data Types:</strong> Understanding the type of data is essential to<br> understanding what tools one can use to analyze it. You'll cover some basic sorting,<br> frequency distributions and contingency tables. We will use pivot tables for the latter<br> two topics.</li>
+                    <li><strong>Data Visualization:</strong>  You'll work to create the appropriate visual display with the<br> appropriate labeling. A good visual display can help make your point clearly without a<br> lot of confusing numbers and technical terms. It also does not have language barriers,<br> so it can be effective with any kind of audience.</li>
+                    <li><strong>Descriptive Statistics:</strong>  We'll identify how data clusters, shapes, and can be distorted,<br> covering some handy tools and guidelines that will serve you well when taking your<br> first look at a data set.</li>
+                    <li><strong>Basic Probability:</strong>  Percentages and probabilities are used in everyday life and they are<br> even more important in business.</li>
+                </ul>
+                <h1 id = "body_h1">Week 2: Sampling and Estimation</h1>
+                <p id = "body_p">Continuing on the work with probability, focusing on two continuous probability<br> distributions; the uniform and the norma</p>
+                <h1 id = "body_h1">Topics Covered:</h1>
+                <ul>
+                    <li><strong>Properties of the Uniform & Normal Distribution:</strong>  The uniform has a rectangular shape<br> and is useful when representing purely random events. Understanding some of the<br> fundamentals of the normal (also known as a bell curve) distribution is also a key<br> element in understanding how to analyze business data.</li>
+                    <li><strong>Survey & Sampling:</strong>  You'll cover the basics of surveying and go through an overview<br> of the process of sampling.</li>
+                    <li><strong>Confidence Interval for Means and Proportions:</strong>  You’ll learn how two different<br> confidence intervals can be used to estimate sales for a new business venture or our<br> new product.</li>
+                    <li><strong>Business Application</strong></li>
+                </ul>
+                <h1 id = "body_h1">Week 3: Hypothesis Testing </h1>
+                <p id = "body_p">You'll cover hypothesis testing, one of the more challenging topics in statistics.</p>
+                <h1 id = "body_h1">Topics Covered:</h1>
+                <ul>
+                    <li><strong>Hypothesis Testing Basics: </strong> What it is, how it's evolved, and how hypothesis tests can <br>relate to various growing business markets.</li>
+                    <li><strong>Hypothesis Testing for Means & Proportions:</strong> We'll go through the step-by-step<br> process of creating and performing tests for means and proportions – think<br> percentages – and we'll do this in Excel. This all leads up to the “p-value” - a common<br> metric that is applied to all hypothesis tests.</li>
+                    <li><strong>Errors:</strong>   We'll cover some of the various errors that occur with hypothesis testing<br> and the business implications that may result from those errors.</li>
+                </ul>
+                <h1 id = "body_h1">Week 4: Linear Models</h1>
+                <p id = "body_p">We'll move away from the more statistical topics to talk about linear equations. We will still<br> rely heavily on Excel to crunch the numbers and will build off of what we’ve learned thus far.</p>
+                <h1 id = "body_h1">Topics Covered:</h1>
+                <ul>
+                    <li>Finding the Equation of a Line</li>
+                    <li>Revenue, Cost</li>
+                    <li>Profit and Breakeven Models</li>
+                    <li>Supply and Demand</li>
+                    <li>Piecewise Models</li>
+                </ul>
+            </div>
+            <div id = "body_cons" style="width: 100%; height: auto; background-color:grey">
+                <div id = "constant">
+                    <h1 id = "body_h1">Who's this Program For?</h1>
+                    <p id = "body_p">This is a foundational course in business analytics, designed to prepare those with strategic<br> decision-making responsibilities to effectively analyze, articulate, and apply key analytics <br>techniques in their work and use that knowledge to make decisions.</p>
+                    <p id = "body_p">It is also uniquely suited for those in analytics roles looking to move into leadership<br> positions where you need to use data-informed decision making.</p>
+                    <p id = "body_p">Ideal for:</p>
+                    <ul>
+                        <li>Data analysts in financial services, sales, marketing, operations, category management (including pricing optimization)</li>
+                        <li>Logistics functions across manufacturing, retail, transportation, healthcare, agriculture and tech</li>
+                        <li>Sales and Marketing managers who want to unlock more value from Salesforce, with immediate relevance for their teams</li>
+                        <li>Leaders looking to unlock value from the data in their ERP systems – SAP, Oracle, MS Dynamics 365</li>
+                        <li>Operations leaders well versed in TQM/Lean principles looking to grow their analytical skills to practically apply those techniques</li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+        <div id = "body3">
+            <div class = "body_3">
+                <h1 id = "body_h1">Meet Your Instructors:</h1>
+                <div id = "content">
+                    <img id = "instructor"src = "/image/George.png" width="150px" height="200px">
+                    <div id = "content2">
+                        <h1 id = "body_h1">George Recck</h1>
+                        <p id = "body_p"><i>Lecturer & Director of the Math Resource Center, Babson College</i></p>
+                        <p id = "body_p">Mr. Recck has taught at Babson College since 1984. He currently serves as the<br> Chair of the Business Analytics/Statistics Education special interest group for the<br> American Statistical Association (ASA). Mr. Recck is also the founder of Total<br> Information, Inc., a consulting firm specializing in providing information service<br> to small businesses.</p>
+                    </div>
+                </div>
+            </div>
+            <div id = "body_cons" style="width: 100%; height: auto; background-color:grey">
+                <div id = "constant">
+                    <h1 id = "body_h1">Who's this Program For?</h1>
+                    <p id = "body_p">This is a foundational course in business analytics, designed to prepare those with strategic<br> decision-making responsibilities to effectively analyze, articulate, and apply key analytics <br>techniques in their work and use that knowledge to make decisions.</p>
+                    <p id = "body_p">It is also uniquely suited for those in analytics roles looking to move into leadership<br> positions where you need to use data-informed decision making.</p>
+                    <p id = "body_p">Ideal for:</p>
+                    <ul>
+                        <li>Data analysts in financial services, sales, marketing, operations, category management (including pricing optimization)</li>
+                        <li>Logistics functions across manufacturing, retail, transportation, healthcare, agriculture and tech</li>
+                        <li>Sales and Marketing managers who want to unlock more value from Salesforce, with immediate relevance for their teams</li>
+                        <li>Leaders looking to unlock value from the data in their ERP systems – SAP, Oracle, MS Dynamics 365</li>
+                        <li>Operations leaders well versed in TQM/Lean principles looking to grow their analytical skills to practically apply those techniques</li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
